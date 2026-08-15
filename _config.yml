@@ -1,0 +1,10 @@
+title: Hugo Young, MSc — Structural Engineering Notes
+email: hugo@civion.cloud
+description: >-
+  Worked calculation examples to the Eurocodes, step by step.
+  Every intermediate value shown, every clause cited.
+baseurl: ""
+url: "https://hugoyoungmsc.github.io"
+author:
+  name: Hugo Young
+theme: minima
