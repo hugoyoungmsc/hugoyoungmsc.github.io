@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" font-family="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif">
+  <title>EC2 truss model with vertical links</title>
+  <desc>Simply supported beam with UDL. Concrete compression struts at 21.8 degrees (true scale, cot theta = 2.5) fan from the supports; vertical links in tension connect the compression chord on top to the tension chord at the bottom. Lever arm z = 0.9d annotated.</desc>
+
+  <!-- background -->
+  <rect x="0" y="0" width="1000" height="400" fill="#FFFFFF"/>
+
+  <!-- title -->
+  <text x="60" y="34" font-size="15" font-weight="700" fill="#0F172A">EC2 §6.2.3 — variable strut inclination truss model (vertical links)</text>
+
+  <!-- beam body -->
+  <rect x="60" y="100" width="840" height="170" fill="#F8FAFC" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- chords: top = compression (concrete), bottom = tension (steel) -->
+  <rect x="60" y="100" width="840" height="18" fill="#64748B"/>
+  <rect x="60" y="252" width="840" height="18" fill="#1D4ED8"/>
+
+  <!-- concrete compression struts, true scale: run = 2.5 x z (152 x 2.5 = 380 px) -->
+  <g stroke="#C2410C" stroke-width="2.5" stroke-dasharray="10 6" stroke-linecap="round" fill="none">
+    <line x1="60" y1="261" x2="440" y2="109"/>
+    <line x1="440" y1="261" x2="820" y2="109"/>
+    <line x1="900" y1="261" x2="520" y2="109"/>
+    <line x1="520" y1="261" x2="140" y2="109"/>
+  </g>
+
+  <!-- vertical links at truss nodes -->
+  <g stroke="#3B82F6" stroke-width="2.5">
+    <line x1="140" y1="118" x2="140" y2="252"/>
+    <line x1="440" y1="118" x2="440" y2="252"/>
+    <line x1="520" y1="118" x2="520" y2="252"/>
+    <line x1="820" y1="118" x2="820" y2="252"/>
+  </g>
+  <!-- intermediate links, schematic (actual spacing 250 mm) -->
+  <g stroke="#93C5FD" stroke-width="1.2">
+    <line x1="235" y1="118" x2="235" y2="252"/>
+    <line x1="330" y1="118" x2="330" y2="252"/>
+    <line x1="615" y1="118" x2="615" y2="252"/>
+    <line x1="710" y1="118" x2="710" y2="252"/>
+  </g>
+
+  <!-- supports -->
+  <g stroke="#475569" stroke-width="1.2">
+    <polygon points="60,270 30,302 90,302" fill="#E2E8F0"/>
+    <polygon points="900,270 870,302 930,302" fill="#E2E8F0"/>
+  </g>
+  <g stroke="#64748B" stroke-width="0.8">
+    <line x1="38" y1="298" x2="56" y2="278"/>
+    <line x1="50" y1="300" x2="68" y2="280"/>
+    <line x1="62" y1="300" x2="80" y2="282"/>
+    <line x1="862" y1="298" x2="844" y2="278"/>
+    <line x1="850" y1="300" x2="832" y2="280"/>
+    <line x1="838" y1="300" x2="820" y2="282"/>
+  </g>
+
+  <!-- UDL arrows -->
+  <g stroke="#64748B" stroke-width="1.5">
+    <line x1="140" y1="58" x2="140" y2="92"/>
+    <line x1="280" y1="58" x2="280" y2="92"/>
+    <line x1="420" y1="58" x2="420" y2="92"/>
+    <line x1="560" y1="58" x2="560" y2="92"/>
+    <line x1="700" y1="58" x2="700" y2="92"/>
+    <line x1="840" y1="58" x2="840" y2="92"/>
+  </g>
+  <g fill="#64748B">
+    <polygon points="136,96 144,96 140,89"/>
+    <polygon points="276,96 284,96 280,89"/>
+    <polygon points="416,96 424,96 420,89"/>
+    <polygon points="556,96 564,96 560,89"/>
+    <polygon points="696,96 704,96 700,89"/>
+    <polygon points="836,96 844,96 840,89"/>
+  </g>
+  <text x="848" y="82" font-size="10" fill="#64748B">w<tspan baseline-shift="sub" font-size="7">d</tspan></text>
+
+  <!-- strut angle theta at left support -->
+  <path d="M 115 261 A 55 55 0 0 1 111.1 240.6" fill="none" stroke="#0F172A" stroke-width="1.5"/>
+  <text x="128" y="252" font-size="13" font-style="italic" fill="#0F172A">θ</text>
+
+  <!-- lever arm z -->
+  <line x1="860" y1="109" x2="860" y2="261" stroke="#0F172A" stroke-width="1.2"/>
+  <polygon points="856,115 864,115 860,107" fill="#0F172A"/>
+  <polygon points="856,255 864,255 860,263" fill="#0F172A"/>
+  <text x="868" y="190" font-size="11" fill="#0F172A">z = 0.9d</text>
+
+  <!-- leader labels -->
+  <line x1="185" y1="165" x2="240" y2="190" stroke="#94A3B8" stroke-width="1"/>
+  <text x="85" y="160" font-size="11" fill="#334155">concrete compression strut</text>
+  <line x1="452" y1="172" x2="441" y2="182" stroke="#94A3B8" stroke-width="1"/>
+  <text x="458" y="170" font-size="11" fill="#334155">vertical link (tension)</text>
+
+  <!-- legend -->
+  <line x1="60" y1="340" x2="100" y2="340" stroke="#C2410C" stroke-width="2.5" stroke-dasharray="10 6" stroke-linecap="round"/>
+  <text x="110" y="344" font-size="10.5" fill="#334155">concrete strut (compression)</text>
+  <line x1="320" y1="327" x2="320" y2="351" stroke="#3B82F6" stroke-width="2.5"/>
+  <text x="335" y="344" font-size="10.5" fill="#334155">vertical link (tension)</text>
+  <rect x="560" y="336" width="40" height="8" fill="#64748B"/>
+  <text x="610" y="344" font-size="10.5" fill="#334155">compression chord</text>
+  <rect x="790" y="336" width="40" height="8" fill="#1D4ED8"/>
+  <text x="840" y="344" font-size="10.5" fill="#334155">tension chord</text>
+
+  <!-- caption -->
+  <text x="60" y="388" font-size="11" fill="#475569">Struts drawn at true scale — cot θ = 2.5 (θ = 21.8°). Vertical links shown schematically (actual spacing 250 mm).</text>
+</svg>
