@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" role="img" aria-labelledby="cwTitle cwDesc">
+<title id="cwTitle">Crack width — effective tension area and crack spacing</title>
+<desc id="cwDesc">Beam section 300 by 600 mm with four H25 bars, effective tension area h c ef 138.75 mm, cracked neutral axis 171.93 mm from the top, and maximum crack spacing 209.1 mm.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="90" y="70" width="160" height="320" fill="#f7f7f7" stroke="#333" stroke-width="1.5"/>
+<rect x="90" y="70" width="160" height="91.7" fill="#dfe9ee" stroke="none"/>
+<rect x="90" y="316.0" width="160" height="74.0" fill="#fbe9e7" stroke="#c0392b" stroke-width="1.2" stroke-dasharray="6 4"/>
+<line x1="90" y1="161.7" x2="250" y2="161.7" stroke="#1f4e5f" stroke-width="1.5"/>
+<text x="258" y="165.7" font-size="12" fill="#1f4e5f">x = 171.9 mm</text>
+<text x="84" y="165.7" font-size="12" fill="#1f4e5f" text-anchor="end">NA</text>
+<circle cx="119.6" cy="360.4" r="6.7" fill="#1f4e5f"/>
+<circle cx="153.2" cy="360.4" r="6.7" fill="#1f4e5f"/>
+<circle cx="186.8" cy="360.4" r="6.7" fill="#1f4e5f"/>
+<circle cx="220.4" cy="360.4" r="6.7" fill="#1f4e5f"/>
+<line x1="266" y1="390.0" x2="266" y2="316.0" stroke="#c0392b" stroke-width="1"/>
+<text x="272" y="353.0" font-size="11" fill="#c0392b">h_c,ef = 138.8 mm</text>
+<text x="90" y="56" font-size="15" font-weight="600" fill="#222">Section — 300 × 600, 4H25</text>
+<text x="84" y="82" font-size="11" fill="#666" text-anchor="end">top</text>
+<text x="380" y="56" font-size="15" font-weight="600" fill="#222">Crack spacing along the beam</text>
+<rect x="380" y="150" width="250" height="120" fill="#f7f7f7" stroke="#333" stroke-width="1.2"/>
+<line x1="430" y1="150" x2="430" y2="270" stroke="#c0392b" stroke-width="2"/>
+<line x1="550" y1="150" x2="550" y2="270" stroke="#c0392b" stroke-width="2"/>
+<line x1="430" y1="132" x2="550" y2="132" stroke="#1f4e5f" stroke-width="1.2" marker-start="url(#arrL)" marker-end="url(#arrR)"/>
+<text x="490" y="124" font-size="12" fill="#1f4e5f" text-anchor="middle">s_r,max = 209.1 mm</text>
+<text x="435" y="298" font-size="12" fill="#c0392b">crack</text>
+<text x="555" y="298" font-size="12" fill="#c0392b">crack</text>
+<text x="380" y="340" font-size="14" fill="#222">w_k = s_r,max × (ε_sm − ε_cm)</text>
+<text x="380" y="362" font-size="14" fill="#222">= 209.1 × 0.806‰</text>
+<text x="380" y="386" font-size="16" font-weight="600" fill="#1e7a46">w_k = 0.169 mm  (limit 0.4)</text>
+<defs><marker id="arrL" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,4 L0,8 L0,0 z" fill="#1f4e5f"/></marker><marker id="arrR" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,4 L8,8 L8,0 z" fill="#1f4e5f"/></marker></defs>
+<text x="90" y="436" font-size="11" fill="#666">Strain compatibility, EC2 §7.3.4. Quasi-permanent combination. Blue shading: compression zone; red dashes: effective tension area.</text>
+</svg>
