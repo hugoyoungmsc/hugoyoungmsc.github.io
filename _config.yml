@@ -8,3 +8,6 @@ url: "https://hugoyoungmsc.github.io"
 author:
   name: Hugo Young
 theme: minima
+
+plugins:
+  - jekyll-sitemap
