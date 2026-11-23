@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hugoyoungmsc.github.io/sitemap.xml
+Sitemap: https://hugoyoungmsc.github.io/sitemap-posts.xml
