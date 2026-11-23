@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="bdTitle bdDesc">
+<title id="bdTitle">EC2 §6.1 rectangular beam bending design — actions, section and ULS stress block</title>
+<desc id="bdDesc">Six metre simply supported beam 300 by 600 mm under 77.25 kN/m: design moment 347.6 kNm at midspan. Section check with 4H25: neutral axis 177.9 mm, rectangular stress block 0.8x = 142.3 mm at 20 MPa, concrete force 853.9 kN, steel force 853.7 kN, lever arm 473.4 mm, resistance 404.1 kNm against a demand of 347.6 kNm.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+
+<!-- ================= Panel A: elevation and moment ================= -->
+<text x="170" y="38" font-size="15" font-weight="600" fill="#222" text-anchor="middle">Beam elevation and design moment</text>
+
+<!-- supports -->
+<path d="M 60 212 L 72 190 L 84 212 Z" fill="#f7f7f7" stroke="#333" stroke-width="1.5"/>
+<path d="M 276 212 L 288 190 L 300 212 Z" fill="#f7f7f7" stroke="#333" stroke-width="1.5"/>
+<line x1="52" y1="212" x2="92" y2="212" stroke="#333" stroke-width="1.2"/>
+<line x1="268" y1="212" x2="308" y2="212" stroke="#333" stroke-width="1.2"/>
+
+<!-- beam -->
+<rect x="60" y="176" width="240" height="30" fill="#f7f7f7" stroke="#333" stroke-width="1.5"/>
+
+<!-- UDL arrows -->
+<g stroke="#c0392b" stroke-width="1.2">
+  <line x1="72" y1="150" x2="72" y2="174"/>
+  <line x1="96" y1="150" x2="96" y2="174"/>
+  <line x1="120" y1="150" x2="120" y2="174"/>
+  <line x1="144" y1="150" x2="144" y2="174"/>
+  <line x1="168" y1="150" x2="168" y2="174"/>
+  <line x1="192" y1="150" x2="192" y2="174"/>
+  <line x1="216" y1="150" x2="216" y2="174"/>
+  <line x1="240" y1="150" x2="240" y2="174"/>
+  <line x1="264" y1="150" x2="264" y2="174"/>
+  <line x1="288" y1="150" x2="288" y2="174"/>
+</g>
+<g fill="#c0392b">
+  <path d="M 72 174 L 69 168 L 75 168 Z"/><path d="M 96 174 L 93 168 L 99 168 Z"/>
+  <path d="M 120 174 L 117 168 L 123 168 Z"/><path d="M 144 174 L 141 168 L 147 168 Z"/>
+  <path d="M 168 174 L 165 168 L 171 168 Z"/><path d="M 192 174 L 189 168 L 195 168 Z"/>
+  <path d="M 216 174 L 213 168 L 219 168 Z"/><path d="M 240 174 L 237 168 L 243 168 Z"/>
+  <path d="M 264 174 L 261 168 L 267 168 Z"/><path d="M 288 174 L 285 168 L 291 168 Z"/>
+</g>
+<line x1="60" y1="150" x2="300" y2="150" stroke="#c0392b" stroke-width="1.6"/>
+<text x="180" y="140" font-size="11" fill="#c0392b" text-anchor="middle">w_d = 77.25 kN/m</text>
+
+<!-- span dimension -->
+<line x1="60" y1="228" x2="60" y2="238" stroke="#666" stroke-width="1"/>
+<line x1="300" y1="228" x2="300" y2="238" stroke="#666" stroke-width="1"/>
+<line x1="60" y1="233" x2="300" y2="233" stroke="#666" stroke-width="1"/>
+<text x="180" y="250" font-size="11" fill="#666" text-anchor="middle">L = 6 000 mm</text>
+
+<!-- bending moment diagram -->
+<line x1="60" y1="300" x2="300" y2="300" stroke="#999" stroke-width="1"/>
+<path d="M 60 300 Q 180 390 300 300" fill="none" stroke="#1f4e5f" stroke-width="2"/>
+<circle cx="180" cy="345" r="3" fill="#1f4e5f"/>
+<text x="180" y="368" font-size="11" fill="#1f4e5f" text-anchor="middle">M_Ed = 347.6 kNm</text>
+<text x="180" y="288" font-size="11" fill="#666" text-anchor="middle">bending moment</text>
+
+<!-- ================= Panel B: section ================= -->
+<text x="470" y="38" font-size="15" font-weight="600" fill="#222" text-anchor="middle">Section 300 × 600, 4H25</text>
+
+<!-- concrete -->
+<rect x="410" y="90" width="120" height="240" fill="#f7f7f7" stroke="#333" stroke-width="1.5"/>
+
+<!-- links outline (dashed) -->
+<rect x="414" y="94" width="112" height="232" fill="none" stroke="#8a8a8a" stroke-width="0.8" stroke-dasharray="4 3"/>
+
+<!-- main bars: centres 55.5 mm from each face at d -->
+<g fill="#1f4e5f">
+  <circle cx="432" cy="308" r="5"/>
+  <circle cx="457" cy="308" r="5"/>
+  <circle cx="483" cy="308" r="5"/>
+  <circle cx="508" cy="308" r="5"/>
+</g>
+
+<!-- h dimension right -->
+<line x1="548" y1="90" x2="558" y2="90" stroke="#666" stroke-width="1"/>
+<line x1="548" y1="330" x2="558" y2="330" stroke="#666" stroke-width="1"/>
+<line x1="553" y1="90" x2="553" y2="330" stroke="#666" stroke-width="1"/>
+<text x="561" y="214" font-size="11" fill="#666" transform="rotate(-90 561 214)">h = 600 mm</text>
+
+<!-- b dimension bottom -->
+<line x1="410" y1="342" x2="410" y2="352" stroke="#666" stroke-width="1"/>
+<line x1="530" y1="342" x2="530" y2="352" stroke="#666" stroke-width="1"/>
+<line x1="410" y1="347" x2="530" y2="347" stroke="#666" stroke-width="1"/>
+<text x="470" y="364" font-size="11" fill="#666" text-anchor="middle">b = 300 mm</text>
+
+<!-- d dimension left -->
+<line x1="398" y1="90" x2="388" y2="90" stroke="#1f4e5f" stroke-width="1"/>
+<line x1="398" y1="308" x2="388" y2="308" stroke="#1f4e5f" stroke-width="1"/>
+<line x1="393" y1="90" x2="393" y2="308" stroke="#1f4e5f" stroke-width="1"/>
+<text x="385" y="205" font-size="11" fill="#1f4e5f" text-anchor="end" transform="rotate(-90 371 205)">d = 544.5 mm</text>
+
+<text x="470" y="390" font-size="11" fill="#666" text-anchor="middle">c_nom = 35 mm, H8 links</text>
+<text x="470" y="406" font-size="11" fill="#666" text-anchor="middle">A_s = 1 963.5 mm²</text>
+
+<!-- ================= Panel C: ULS block and forces ================= -->
+<text x="720" y="38" font-size="15" font-weight="600" fill="#222" text-anchor="middle">ULS: stress block and forces</text>
+
+<!-- section outline scaled 0.5 px/mm, 300 mm tall -->
+<rect x="700" y="90" width="90" height="300" fill="#ffffff" stroke="#333" stroke-width="1.5"/>
+
+<!-- compression block: 0.8x = 142.3 mm -> 71 px -->
+<rect x="700" y="90" width="90" height="71" fill="#e8d5d5" stroke="#c0392b" stroke-width="1"/>
+<g stroke="#c0392b" stroke-width="0.6">
+  <line x1="703" y1="93" x2="713" y2="83"/>
+  <line x1="718" y1="96" x2="728" y2="86"/>
+  <line x1="733" y1="103" x2="743" y2="93"/>
+  <line x1="748" y1="110" x2="758" y2="100"/>
+  <line x1="763" y1="117" x2="773" y2="107"/>
+  <line x1="778" y1="124" x2="788" y2="114"/>
+  <line x1="790" y1="131" x2="800" y2="121"/>
+</g>
+<text x="745" y="132" font-size="11" fill="#c0392b" text-anchor="middle">0.8x = 142.3 mm</text>
+<text x="745" y="148" font-size="11" fill="#c0392b" text-anchor="middle">η f_cd = 20 MPa</text>
+
+<!-- neutral axis: x = 177.9 mm -> 89 px -->
+<line x1="640" y1="179" x2="820" y2="179" stroke="#1f4e5f" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="824" y="183" font-size="11" fill="#1f4e5f">N.A. x = 177.9 mm</text>
+
+<!-- steel line at d = 544.5 -> 272.3 px -->
+<line x1="700" y1="362" x2="790" y2="362" stroke="#1f4e5f" stroke-width="2"/>
+<g fill="#1f4e5f">
+  <circle cx="715" cy="362" r="5"/><circle cx="745" cy="362" r="5"/><circle cx="775" cy="362" r="5"/>
+</g>
+
+<!-- C arrow at block centroid: 0.4x = 71.2 mm -> 35.6 px -->
+<line x1="672" y1="110" x2="672" y2="146" stroke="#c0392b" stroke-width="2.2"/>
+<path d="M 672 152 L 667 142 L 677 142 Z" fill="#c0392b"/>
+<text x="656" y="106" font-size="11" fill="#c0392b" text-anchor="middle">C = 853.9 kN</text>
+
+<!-- T arrow at steel -->
+<line x1="866" y1="372" x2="866" y2="336" stroke="#1f4e5f" stroke-width="2.2"/>
+<path d="M 866 330 L 861 340 L 871 340 Z" fill="#1f4e5f"/>
+<text x="884" y="390" font-size="11" fill="#1f4e5f" text-anchor="end">T = 853.7 kN</text>
+
+<!-- lever arm z between centroid of block (y=125.6) and steel (y=362) -->
+<line x1="792" y1="126" x2="836" y2="126" stroke="#666" stroke-width="0.8" stroke-dasharray="3 3"/>
+<line x1="792" y1="362" x2="836" y2="362" stroke="#666" stroke-width="0.8" stroke-dasharray="3 3"/>
+<line x1="832" y1="126" x2="832" y2="362" stroke="#666" stroke-width="1"/>
+<line x1="828" y1="126" x2="836" y2="126" stroke="#666" stroke-width="1"/>
+<line x1="828" y1="362" x2="836" y2="362" stroke="#666" stroke-width="1"/>
+<text x="845" y="248" font-size="11" fill="#666" transform="rotate(-90 845 248)">z = 473.4 mm</text>
+
+<!-- strain annotation -->
+<text x="720" y="428" font-size="11" fill="#333" text-anchor="middle">ε_c = 3.5 ‰ at the top fibre</text>
+<text x="720" y="444" font-size="11" fill="#333" text-anchor="middle">ε_s = 7.22 ‰ at the steel (yields)</text>
+
+<!-- result strip -->
+<text x="180" y="436" font-size="12" fill="#1f4e5f" text-anchor="middle">M_Ed = 347.6 kNm  ≤  M_Rd = 404.1 kNm — utilisation 0.86</text>
+</svg>
